@@ -30,11 +30,12 @@ MOSTRANT DADES D'USUARIS DE LA BASE DE DADES LDAP
 </head>
 <body>
 <h2>Formulari de selecció d'usuari</h2>
-<form action="http://zend-maroma.fjeclot.net/zendldap/consulta" method="GET">
+<form action="http://zend-maroma.fjeclot.net/zendldap/consulta.php" method="GET">
 Unitat organitzativa: <input type="text" name="ou"><br>
 Usuari: <input type="text" name="usr"><br>
 <input type="submit"/>
 <input type="reset"/>
 </form>
+<a href="http://zend-maroma.fjeclot.net/zendldap/menu.php">Torna al menú</a>
 </body>
 </html>
