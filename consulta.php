@@ -32,6 +32,7 @@ foreach ($usuari as $atribut => $dada) {
 <title>
 MOSTRANT DADES D'USUARIS DE LA BASE DE DADES LDAP
 </title>
+<link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
 <h2>Formulari de selecció d'usuari</h2>

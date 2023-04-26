@@ -3,6 +3,7 @@
 		<title>
 			Home
 		</title>
+		<link rel="stylesheet" type="text/css" href="css.css">
 	</head>
 	<body>
 		<h2> Gestió d'Usuaris LDAP</h2>

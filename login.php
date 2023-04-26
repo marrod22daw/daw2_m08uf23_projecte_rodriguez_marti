@@ -3,6 +3,7 @@
 		<title>
 			login
 		</title>
+		<link rel="stylesheet" type="text/css" href="css.css">
 	</head>
 	<body>
 		<form action="http://zend-maroma.fjeclot.net/zendldap/auth.php" method="POST">
