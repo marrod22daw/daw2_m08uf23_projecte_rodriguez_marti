@@ -7,13 +7,13 @@ ini_set('display_errors', 0);
 #
 # Atribut a modificar --> Número d'idenficador d'usuari
 #
-$atribut='uidNumber'; # El número identificador d'usuar té el nom d'atribut uidNumber
-$nou_contingut=6000;
+$atribut=$_POST['radioValue']; # El número identificador d'usuar té el nom d'atribut uidNumber
+$nou_contingut=$_POST['nouContingut'];
 #
 # Entrada a modificar
 #
-$uid = 'usr2';
-$unorg = 'usuaris';
+$uid = $_POST['uid'];
+$unorg = $_POST['unorg'];
 $dn = 'uid='.$uid.',ou='.$unorg.',dc=fjeclot,dc=net';
 #
 #Opcions de la connexió al servidor i base de dades LDAP
@@ -35,24 +35,9 @@ if ($entrada){
     Attribute::setAttribute($entrada,$atribut,$nou_contingut);
     $ldap->update($dn, $entrada);
     echo "Atribut modificat";
-} else echo "<b>Aquesta entrada no existeix</b><br><br>";
+    echo '<a href="http://zend-maroma.fjeclot.net/zendldap/menu.php">Torna al menú</a>';
+} else{
+    echo "<b>Aquesta entrada no existeix</b><br><br>";
+    echo '<a href="http://zend-maroma.fjeclot.net/zendldap/menu.php">Torna al menú</a>';
+}
 ?>
-<html>
-<head>
-<title>
-Editar
-</title>
-</head>
-<body>
-<h2>Editar</h2>
-<!-- 
-<form action="http://zend-maroma.fjeclot.net/zendldap/consulta.php" method="GET">
-Unitat organitzativa: <input type="text" name="ou"><br>
-Usuari: <input type="text" name="usr"><br>
-<input type="submit"/>
-<input type="reset"/>
-</form>
--->
-<a href="http://zend-maroma.fjeclot.net/zendldap/menu.php">Torna al menú</a>
-</body>
-</html>

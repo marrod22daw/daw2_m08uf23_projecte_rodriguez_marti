@@ -21,6 +21,11 @@ foreach ($usuari as $atribut => $dada) {
  if ($atribut != "dn") echo $atribut.": ".$dada[0].'<br>';
 }
 }
+//foreach ($usuari as $atribut => $dada) {
+//    if ($atribut == "telephoneNumber" || $atribut == "title") {
+//        echo $atribut . ": " . $dada[0] . '<br>';
+//    }
+//}
 ?>
 <html>
 <head>

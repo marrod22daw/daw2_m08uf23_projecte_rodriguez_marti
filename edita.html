@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>
+Editar
+</title>
+</head>
+<body>
+<h2>Editar</h2>
+<form action="http://zend-maroma.fjeclot.net/zendldap/edita.php" method="POST">
+Unitat organitzativa: <input type="text" name="unorg"><br>
+Usuari: <input type="text" name="uid"><br><br>
+Escull una opcio: <br>
+
+<input type="radio" name="radioValue" value="num_id"><span>Numero d'identificacio</span><br>
+<input type="radio" name="radioValue" value="grup"><span>Grup</span><br>
+<input type="radio" name="radioValue" value="dir_pers"><span>Directori personal</span><br>
+<input type="radio" name="radioValue" value="sh"><span>Shell</span><br>
+<input type="radio" name="radioValue" value="cn"><span>Nom complet</span><br>
+<input type="radio" name="radioValue" value="sn"><span>Cognom</span><br>
+<input type="radio" name="radioValue" value="nom"><span>Nom</span><br>
+<input type="radio" name="radioValue" value="mobil"><span>Mobil</span><br>
+<input type="radio" name="radioValue" value="adressa"><span>Adressa</span><br>
+<input type="radio" name="radioValue" value="telefon"><span>Telefon</span><br>
+<input type="radio" name="radioValue" value="titol"><span>Titol</span><br>
+<input type="radio" name="radioValue" value="descripcio"><span>Descripcio</span><br>
+<input type="text" name="nouContingut" placeholder="Contigut a modificar"><br><br>
+<input type="submit" value="Editar usuari">
+<input type="reset" value="Netejar">
+</form>
+<a href="http://zend-maroma.fjeclot.net/zendldap/menu.php">Torna al menu</a>
+</body>
+</html>

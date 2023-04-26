@@ -7,8 +7,8 @@ ini_set('display_errors', 0);
 #
 # Entrada a esborrar: usuari 3 creat amb el projecte zendldap2
 #
-$uid = 'usr3';
-$unorg = 'usuaris';
+$uid = $_POST['uid'];
+$unorg = $_POST['unorg'];
 $dn = 'uid='.$uid.',ou='.$unorg.',dc=fjeclot,dc=net';
 #
 #Opcions de la connexió al servidor i base de dades LDAP
@@ -28,26 +28,9 @@ $ldap->bind();
 try{
     $ldap->delete($dn);
     echo "<b>Entrada esborrada</b><br>";
+    echo '<a href="http://zend-maroma.fjeclot.net/zendldap/menu.php">Torna al menú</a>';
 } catch (Exception $e){
     echo "<b>Aquesta entrada no existeix</b><br>";
+    echo '<a href="http://zend-maroma.fjeclot.net/zendldap/menu.php">Torna al menú</a>';
 }
 ?>
-<html>
-<head>
-<title>
-Eliminar
-</title>
-</head>
-<body>
-<h2>Eliminar</h2>
-<!-- 
-<form action="http://zend-maroma.fjeclot.net/zendldap/consulta.php" method="GET">
-Unitat organitzativa: <input type="text" name="ou"><br>
-Usuari: <input type="text" name="usr"><br>
-<input type="submit"/>
-<input type="reset"/>
-</form>
--->
-<a href="http://zend-maroma.fjeclot.net/zendldap/menu.php">Torna al menú</a>
-</body>
-</html>
