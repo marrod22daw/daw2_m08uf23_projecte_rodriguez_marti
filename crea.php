@@ -20,6 +20,7 @@ $adressa = $_POST['adressa'];
 $telefon = $_POST['telefon'];
 $titol = $_POST['titol'];
 $descripcio = $_POST['descripcio'];
+
 $objcl=array('inetOrgPerson','organizationalPerson','person','posixAccount','shadowAccount','top');
 #
 #Afegint la nova entrada
@@ -50,6 +51,7 @@ Attribute::setAttribute($nova_entrada, 'telephoneNumber', $telefon);
 Attribute::setAttribute($nova_entrada, 'title', $titol);
 Attribute::setAttribute($nova_entrada, 'description', $descripcio);
 $dn = 'uid='.$uid.',ou='.$unorg.',dc=fjeclot,dc=net';
+
 // $filter = '(uid='.$uid.')';
 // $busqueda = $ldap->search($filter, $dn);
 
@@ -69,4 +71,5 @@ $dn = 'uid='.$uid.',ou='.$unorg.',dc=fjeclot,dc=net';
     }
 //}
 ?>
+
 

@@ -34,3 +34,4 @@ try{
     echo '<a href="http://zend-maroma.fjeclot.net/zendldap/menu.php">Torna al menú</a>';
 }
 ?>
+
