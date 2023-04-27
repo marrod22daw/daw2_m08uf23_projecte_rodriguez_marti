@@ -39,8 +39,8 @@ MOSTRANT DADES D'USUARIS DE LA BASE DE DADES LDAP
 <form action="http://zend-maroma.fjeclot.net/zendldap/consulta.php" method="GET">
 Unitat organitzativa: <input type="text" name="ou"><br>
 Usuari: <input type="text" name="usr"><br>
-<input type="submit"/>
-<input type="reset"/>
+<input type="submit" value="Consultar"/>
+<input type="reset" value="Netejar"/>
 </form>
 <a href="http://zend-maroma.fjeclot.net/zendldap/menu.php">Torna al menú</a>
 </body>
